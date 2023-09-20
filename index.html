@@ -8,7 +8,24 @@
 </head>
 <body>
 <iframe style="width: calc(100vw - 20px); height: calc(100vh - 35px);" title="iframe" allowfullscreen="allowfullscreen"
-        allow="autoplay; fullscreen; clipboard-read; clipboard-write; self" src="http://0.0.0.0:8000/login"></iframe>
+        allow="autoplay; fullscreen; clipboard-read; clipboard-write; self" src="https://c04f4a008026.ngrok.app/login"></iframe>
 <!--<iframe style="width: calc(100vw - 20px); height: calc(100vh - 35px);" src=""></iframe>-->
+
+<script>
+  // var currentDomain = "{{ current_domain }}";
+  
+  // // Define an array of allowed domains
+  // var allowedDomains = ["domain1.com", "domain2.com", "domain3.com"];
+  
+  // // Check if the current domain is in the allowedDomains array
+  // if (allowedDomains.includes(currentDomain)) {
+    // Set SESSION_COOKIE_DOMAIN dynamically
+    console.log('h1', document)
+    document.cookie = "SESSION_COOKIE_DOMAIN=http://localhost:8000";
+    console.log('h2', document.cookie)
+  // }
+</script>
+
 </body>
 </html>
+
